@@ -15,6 +15,7 @@ li {
 body {
   font-family: Montserrat;
   background-color: #fafafa;
+  color: var(--primary-text-color);
   margin: 0;
 }
 h1,
@@ -37,13 +38,14 @@ p {
   padding-bottom: 80px;
 }
 /* ========header======= */
-.header {
-}
+
 .header_container {
+  position: relative;
   display: flex;
   align-items: center;
   padding-top: 23px;
   padding-bottom: 23px;
+  z-index: 50;
 }
 .logo {
   color: var(--primary-text-color);
@@ -76,7 +78,16 @@ p {
   width: 511px;
   height: 400px;
 }
-
+.hero_bg {
+  position: absolute;
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .hero_title {
   font-weight: 800;
   font-size: 58px;
@@ -153,6 +164,19 @@ p {
 .about_text--color {
   color: #ffffff;
 }
+.about_icon--bag,
+.about_icon--shop {
+  fill: #0d5c63;
+  width: 48px;
+  height: 42px;
+  margin-bottom: 14px;
+}
+.about_icon--book {
+  fill: #ffffff;
+  width: 48px;
+  height: 38px;
+  margin-bottom: 14px;
+}
 
 /* ========Achivments========= */
 
@@ -202,4 +226,78 @@ p {
   line-height: 1.5;
   letter-spacing: 0.1px;
   color: var(--accent-text-color);
+}
+.achievements_icon--community {
+  fill: #0d5c63;
+  width: 48px;
+  height: 44px;
+  margin-bottom: 10px;
+}
+.achievements_icon--vector {
+  fill: #0d5c63;
+  width: 48px;
+  height: 26px;
+  margin-bottom: 20px;
+}
+.achievements_icon--achivment {
+  fill: #0d5c63;
+  width: 36px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+.achievements_icon--bag {
+  fill: #0d5c63;
+  width: 48px;
+  height: 42px;
+  margin-bottom: 14px;
+}
+
+/* ========Practice======= */
+.practice_container {
+  padding-top: 125px;
+}
+.practice_list {
+  display: flex;
+}
+.practice_item {
+  width: 238px;
+  height: 341px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.practice_item:not(:last-child) {
+  margin-right: 35px;
+}
+.practice_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.1px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+.practice_text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.2px;
+  margin-left: 30px;
+  margin-right: 26px;
+  margin-bottom: 50px;
+  color: var(--accent-text-color);
+}
+.practice_text--media {
+  margin-bottom: 30px;
+}
+
+/* =======who we are========= */
+.whowe_container {
+  padding-top: 100px;
+}
+.whowe_text {
+  margin-bottom: 100px;
 }
