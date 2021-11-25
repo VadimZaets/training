@@ -14,7 +14,7 @@ li {
 }
 body {
   font-family: Montserrat;
-
+  background-color: #fafafa;
   margin: 0;
 }
 h1,
@@ -113,6 +113,7 @@ p {
   box-sizing: border-box;
   border-radius: 37px;
 }
+
 /* ========About======= */
 .about_list {
   display: flex;
@@ -151,4 +152,54 @@ p {
 .about_title--color,
 .about_text--color {
   color: #ffffff;
+}
+
+/* ========Achivments========= */
+
+.section_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.42;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+.section_text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.2px;
+  color: var(--accent-text-color);
+  margin-bottom: 50px;
+}
+.achievements_list {
+  display: flex;
+}
+.achievements_item {
+  width: 238px;
+  height: 209px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.achievements_item:not(:last-child) {
+  margin-right: 30px;
+}
+.achievements_stat {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.42;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+.achievements_text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--accent-text-color);
 }
